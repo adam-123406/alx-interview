@@ -3,6 +3,7 @@
 Minimum Operations
 '''
 
+
 def minOperations(n):
     '''Computes the fewest number of operations needed to result
     in exactly n H characters.
@@ -32,4 +33,4 @@ def minOperations(n):
             ops_count += 1
             # print('-(01)->{}'.format('H' * done), end='')
     # print('')
-    return ops_count
+return ops_count
