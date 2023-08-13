@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Minimum Operations
+'''Code challage.
 '''
 def minOperations(n):
     '''Computes the fewest number of operations needed to result
