@@ -37,5 +37,8 @@ def slvoe(n):
             k.append([i, s])
             i += 1
             print(n)
+            k = []
+            i = 0
 
 
+solve(n)
