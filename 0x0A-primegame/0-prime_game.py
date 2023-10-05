@@ -16,3 +16,19 @@ def isWinner(x, nums):
 
     sieve[0] = sieve[1] = False
     c = 0
+    for i in range(len(sieve)):
+        if sieve[i]:
+            c += 1
+        sieve[i] = c
+
+    winner = ''
+    player1 = 0
+    for n in nums:
+        player1 += sieve[n] % 2 == 1
+    if player1 * 2 == len(nums):
+        winner = None
+    if player1 * 2 > len(nums):
+        winner = "Maria"
+    else:
+        winner = "Ben"
+    return winner
